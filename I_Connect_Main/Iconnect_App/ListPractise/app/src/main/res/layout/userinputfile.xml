@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cordilayout">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/recycleMain">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="#077B92"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/textsize"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:hint="ENTER THE NAME"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/textview1"
+        android:inputType="textPersonName"
+        android:layout_margin="5dp"
+        >
+    </EditText>
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/name"
+        android:text="@string/number"
+        android:textColor="#077B92"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/textsize"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/number"
+        android:layout_below="@+id/textview2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:hint="ENTER THE CONTACT NUMBER"
+        />
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textColor="#077B92"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/textsize"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/spinner"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:minLines="3"
+        android:hint="DESCRIPTION"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textview3"
+        android:layout_margin="5dp"/>
+
+    <!--<Button-->
+        <!--style="?android:attr/buttonStyleSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="CANCEL"-->
+        <!--android:id="@+id/cancel"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<Button-->
+        <!--style="?android:attr/buttonStyleSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="SUBMIT"-->
+        <!--android:id="@+id/submit"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--/>-->
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOPIC:"
+        android:textColor="#077B92"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/textsize"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/number"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        style="@style/spinner_style"
+        android:layout_below="@+id/textview4"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentLeft="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/notify"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/textview3"
+        android:layout_below="@+id/spinner"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/notifyname"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/textview1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/notifyphone"
+        android:layout_alignParentRight="true"
+        android:layout_margin="9dp"
+        android:layout_toRightOf="@+id/textview2"
+        android:layout_below="@+id/name"/>
+
+
+</RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_delete"
+        app:layout_anchor="@id/recycleMain"
+        app:layout_anchorGravity="bottom|left"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:layout_anchor="@id/recycleMain"
+        app:layout_anchorGravity="bottom|right"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

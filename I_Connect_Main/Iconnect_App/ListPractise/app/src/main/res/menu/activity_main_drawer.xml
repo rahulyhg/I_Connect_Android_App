@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single">
+
+    <item android:id="@+id/nav_android" android:title="Android"></item>
+    <item android:id="@+id/nav_ethicalhacking" android:title="Ethical-Hacking"></item>
+    <item android:id="@+id/nav_mechanics" android:title="Mechanics"></item>
+    <item android:id="@+id/nav_webdevelopment" android:title="Web-Development"></item>
+
+</group>
+<group
+    android:checkableBehavior="single">
+    <item android:id="@+id/nav_askquestion" android:title="Ask-A-Question"></item>
+
+    <item android:id="@+id/nav_help" android:title="Help"></item>
+</group>
+
+</menu>

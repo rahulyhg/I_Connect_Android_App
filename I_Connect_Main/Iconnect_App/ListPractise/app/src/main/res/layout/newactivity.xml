@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sms1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginLeft="25dp"
+        app:backgroundTint="#0066ff"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        materialdesign:animate="true"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/m_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginLeft="155dp"
+        app:backgroundTint="#0066FF"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:layout_anchorGravity="left|end"/>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+<!--xml for spinner view file-->

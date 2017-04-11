@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "265754005701",
+    "firebase_url": "https://boiling-fire-2749.firebaseio.com",
+    "project_id": "boiling-fire-2749",
+    "storage_bucket": "boiling-fire-2749.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265754005701:android:9b972d577d268f1a",
+        "android_client_info": {
+          "package_name": "com.example.varun.listpractise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265754005701-vu5avg9rnq6sn5j2o2b9bbkmuopq6lih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGIRrnrdNzdwAmBKNUe9lYkJ-l5RDzTMo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
